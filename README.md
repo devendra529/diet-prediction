@@ -1,40 +1,127 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🥗 diet_pridiction
 
-## Getting Started
+A simple AI-based web app that helps users get diet suggestions and basic nutrition insights. This project is built for learning and hackathon purposes using modern web technologies.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+* 🔐 Login & Signup (File-based system, no database)
+* 🧠 Basic Diet Prediction (based on user input)
+* 📸 Food Image Upload (for future nutrition analysis)
+* 🤖 Chat Assistant (for diet-related questions)
+* 💻 Clean and responsive UI
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js, Tailwind CSS
+* **Backend:** Node.js (API routes in Next.js)
+* **Storage:** File System (No MongoDB used)
+* **Authentication:** Custom Login/Signup using file storage
+* **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+/app
+  /login
+  /signup
+  /dashboard
+  /predict
+
+/lib
+  auth.js
+
+/components
+  Navbar
+  Form
+
+/data
+  users.json   // stores user data
+```
+
+---
+
+## ⚙️ Getting Started (Full Setup Guide)
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/diet_pridiction.git
+cd diet_pridiction
+```
+
+---
+
+### 2️⃣ Install all dependencies
+
+Make sure you have **Node.js installed** (v18 or above recommended)
+
+```bash
+npm install
+```
+
+This will install:
+
+* Next.js
+* React
+* Tailwind CSS
+* All required packages automatically
+
+---
+
+### 3️⃣ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 4️⃣ Open in browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Go to 👉 https://diet-pridiction.vercel.app/
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🔑 How Authentication Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* User data is stored in a local file (`users.json`)
+* On signup → user details are saved
+* On login → credentials are verified from file
+* Simple and useful for practice projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is deployed on **Vercel** for easy hosting and fast performance.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# diet_pridiction
->>>>>>> e96e0024b3d12de06964436054155d0afc8ae37d
+---
+
+## 🎯 Purpose
+
+* Practice full-stack development
+* Learn authentication without database
+* Build a simple AI-based project for hackathons
+
+---
+
+
+## 👨‍💻 Author
+
+Devendra Pratap Singh
+
+---
+
+## ⭐ Note
+
+This is a beginner-friendly project. It can be improved by adding:
+
+* Database (MongoDB / Firebase)
+* Better AI models
+* Secure authentication (JWT)
