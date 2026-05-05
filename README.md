@@ -1,4 +1,4 @@
-# 🥗 diet_pridiction
+# 🥗 diet_prediction
 
 A simple AI-based web app that helps users get diet suggestions and basic nutrition insights. This project is built for learning and hackathon purposes using modern web technologies.
 
